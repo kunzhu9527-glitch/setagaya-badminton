@@ -20,6 +20,8 @@ h1{font-size:20px;margin:0 0 2px}
 .nx{opacity:.75}
 h2{font-size:14px;letter-spacing:.06em;color:var(--mut);margin:28px 0 10px;font-weight:600}
 h2 i{font-style:normal;color:var(--acc);font-weight:700}
+.rt{background:var(--acc2);border:1px solid var(--acc);border-radius:8px;padding:10px 12px;font-size:13.5px;line-height:1.65;margin-bottom:16px}
+.rt a{font-weight:700}
 .warn{background:var(--acc2);border:1px solid var(--warn);color:var(--warn);border-radius:8px;padding:10px 12px;font-size:13.5px;margin-bottom:14px}
 .lot{background:var(--acc);color:var(--bg);border-radius:8px;padding:12px 14px;margin-bottom:16px;font-size:14px;display:none}
 .lot a{color:var(--bg);font-weight:700}
@@ -81,7 +83,9 @@ max-width:92vw;transition:transform .25s;z-index:9;line-height:1.55}
 <h1>バドミントン空き状況</h1>
 <div class="upd">世田谷区けやきネット ／ 用賀駅から自転車で通える39施設<br>
 けやきネットから取得 <b>8月29日 12:08</b>
-<span class="nx">／ 次回 8月29日 18:05 頃</span></div>
+<span class="nx">／ 次回 8月29日 23:40〜23:50 頃</span></div>
+<div class="rt">🕒 この一覧は <b>1日1回・深夜だけ</b>の取得です。日中に空いた枠・埋まった枠は反映されません。<br>
+<b>いま予約できるかどうかは</b> <a href="https://setagaya.keyakinet.net/Web/Home/WgR_ModeSelect" target="_blank" rel="noopener">けやきネット（公式）で確認</a>してください。</div>
 
 <div class="lot" id="lot">📌 <b>今月の抽選申込期間です（毎月1〜4日）</b><br>
 用賀中学校の抽選申込はお早めに → <a href="https://setagaya.keyakinet.net/Web/Home/WgR_ModeSelect" target="_blank" rel="noopener">けやきネットを開く</a></div>
@@ -258,7 +262,7 @@ Android Chrome はブックマークレットに対応していません。そ�
 <footer>
 けやきネットは画面遷移がすべてPOSTのため、特定の枠へ直接飛ぶリンクは作れません。「予約する」を押すと<b>施設名・日付・時間帯をコピー</b>してけやきネットを開きます。<br>
 予約にはけやきネットの利用者IDでのログインが必要です。<br>
-データはけやきネットのゲスト参照で取得（ログインしていません）。表示は最終更新時点のもので、その後に埋まっている場合があります。<br>
+<b>更新頻度について</b>：データはけやきネットの<b>ゲスト参照</b>で取得しています（ログインしていません）。取得は<b>1日1回・深夜のみ</b>で、リアルタイムではありません。閉店直前に回すのは、そこで見える「取消処理中」が必ず翌日12時に開放されると分かるためです。したがって<b>日中の変動（空いた・埋まった）はこの表に出ません</b>。最新の空き状況は<a href="https://setagaya.keyakinet.net/Web/Home/WgR_ModeSelect" target="_blank" rel="noopener">けやきネット</a>でご確認ください。<br>
 <b>アクセスについて</b>：<b>用賀駅からの🚲自転車</b>と、<b>その施設の最寄駅からの🚶徒歩</b>を並べています（Googleマップの目安）。最寄駅が用賀そのものの施設は用賀だけを出し、徒歩と自転車の両方を載せています。信号待ちや駐輪場所は含みません。<br>
 <b>料金について</b>：表示しているのは<b>その枠にかかる金額だけ</b>です（時間帯区分・平日／土日祝・半面／全面を判定済み）。出所は大蔵総合運動場・大蔵第二運動場が世田谷区スポーツ振興財団、宮坂区民センターと学校体育館が世田谷区の「ガイドブック施設使用料金一覧」。祝日は国民の祝日で判定しています（学校体育館は区が公表している「平日夜間」「学校休業日」の2区分のみ）。<br>
 <b>🏸の面数について</b>：大蔵総合運動場・大蔵第二運動場は<b>世田谷区スポーツ振興財団の公表値</b>（どちらもバドミントン6面／半面利用は3面）。それ以外は公表値が存在しないため、<b>けやきネット登録の面積 ÷ 190㎡ で算出した推定値</b>を「約○面」と表記しています。190㎡は公営体育館の実績（大蔵総合運動場 1,160㎡＝6面、大蔵第二 1,080㎡＝6面、尾山台地域体育館 487㎡＝3面）から採った1面あたりの所要面積です。実際に張れる面数は天井高・バスケットゴール・柱の位置で変わります。<br>
